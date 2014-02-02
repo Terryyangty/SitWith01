@@ -1,0 +1,450 @@
+@charset 'UTF-8';
+
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		background: #F8F8F8;
+	}
+
+	body,input,textarea,select
+	{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 15pt;
+		line-height: 1.75em;
+		color: #888;
+		-webkit-text-stroke: 0.1px;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		color: #666;
+		margin: 0 0 1em 0;
+		font-weight: 100;
+		line-height: 1.5em;
+	}
+	
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.dark h1,
+		.dark h2,
+		.dark h3,
+		.dark h4,
+		.dark h5,
+		.dark h6
+		{
+			color: #fff;
+		}
+		
+	strong, b
+	{
+		font-weight: 400;
+		color: inherit;
+	}
+	
+		.dark strong, .dark b
+		{
+			color: #fff;
+			color: rgba(255,255,255,0.85);
+		}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+
+	a
+	{
+		color: inherit;
+		text-decoration: none;
+		border-bottom: dotted 1px rgba(0,0,0,0.25);
+		-moz-transition: border-bottom-color 0.25s ease-in-out;
+		-webkit-transition: border-bottom-color 0.25s ease-in-out;
+		-o-transition: border-bottom-color 0.25s ease-in-out;
+		-ms-transition: border-bottom-color 0.25s ease-in-out;
+		transition: border-bottom-color 0.25s ease-in-out;
+	}
+	
+	input[type=submit] 
+	{
+		background-color: #49494a;
+		border: solid 1px #333;
+		color: #eaeaea;
+		
+	}
+	
+	input[type=submit]:hover 
+	{
+		background-color: #700;
+		border: solid 1px #333;
+		color: #eaeaea;
+		
+	}
+	
+		a:hover
+		{
+			border-bottom-color: rgba(0,0,0,0);
+		}
+
+		.dark a
+		{
+			color: #fff;
+			border-bottom-color: rgba(255,255,255,0.5);
+		}
+
+			.dark a:hover
+			{
+				border-bottom-color: rgba(255,255,255,0);
+			}
+
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+	
+	hr
+	{
+		border: 0;
+		border-top: solid 1px #e6e6e6;
+		margin: 2em 0 2em 0;
+	}
+
+		.dark hr
+		{
+			border-top-color: rgba(255,255,255,0.5);
+		}
+	
+	blockquote
+	{
+		border-left: solid 0.25em #e6e6e6;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+
+		.dark blockquote
+		{
+			border-left-color: rgba(255,255,255,0.5);
+		}
+	
+	p, ul, ol, dl
+	{
+		margin-bottom: 1em;
+	}
+	
+	p
+	{
+		text-align: justify;
+	}
+
+	header
+	{
+		margin-bottom: 1em;
+	}
+	
+		header h1,
+		header h2,
+		header h3,
+		header h4,
+		header h5,
+		header h6
+		{
+			margin: 0;
+		}
+	
+		header p
+		{
+			display: block;
+			margin: 0;
+			padding: 0.25em 0 0.5em 0;
+		}
+		
+	footer
+	{
+		padding-top: 1.5em;
+	}
+
+	br.clear
+	{
+		clear: both;
+	}
+	
+	.featured
+	{
+		text-align: center;
+	}
+	
+		.featured p
+		{
+			text-align: center;
+		}
+
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		margin: 0;
+		background: url('images/ROEbg.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 5em 0 14em 0;
+		color: #fff;
+	}
+	
+		
+	
+		#header > header,
+		#header > header p,
+		#header > footer
+		{
+			text-align: center;
+			position: relative;
+			z-index: 1;
+		}
+		
+		#header header
+		{
+			
+		}
+		
+			#header header h1
+			{
+				font-size: 2.25em;
+				line-height: 1.25em;
+				margin-bottom: 0;
+			}
+			
+			#header header p
+			{
+				margin-top: 1.25em;
+				font-weight: 100;
+				padding: 0;
+				font-size: 1.25em;
+				line-height: 1.5em;
+			}
+			#header header .information
+			{
+				width:100%;
+				height: 200px;
+			}
+					
+				#header header .information #information_container
+				{
+					margin-left: 20%;
+					margin-right: 20%;
+				}	
+					
+					#header header .information #logo
+					{
+						text-align: center;
+					}
+					
+			
+		#header .title
+		{
+			text-align: center;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			background-color: black;
+			background-size: contain;
+			background-position: center;
+			margin-left: 20%;
+			margin-right: 20%;
+			height: 3em;
+		}	
+			
+			#header .title table
+			{
+				width: 100%;
+				height: 100%;
+			}
+			
+				#header .title table tr #title_td
+				{
+					width: 80%;
+				}
+				
+					#header .title table tr td #title_container
+					{
+						text-align: center;
+					}
+				
+				#header .title table tr #backtohome_td
+				{
+					width: 20%;
+				}
+				
+					#header .title table tr td #backtohome
+					{
+						text-align: center;
+					}
+			
+			
+		#header .content
+		{
+			color: black;
+			margin-bottom: 0;
+		}
+			#header .content #content_container
+			{
+				background: url('images/ROE_description_bg.png');
+				background-size: contain;
+				background-position: center;
+				width: 60%;
+				margin-left: 20%;
+				margin-right: 20%;
+				padding-bottom: 10em;
+				margin-bottom: 0;
+				filter:alpha(opacity=90);
+				opacity:0.9;
+			}
+				
+				#header .content #content_container #introduction
+				{
+					padding: 1em 2em 0 2em;
+					width: 90%;
+				}
+			
+				#header .content #content_container #form
+				{
+					padding: 1em 2em 0 2em;
+					width: 90%;
+				}
+					
+					#header .content #content_container #form table
+					{
+						padding: 1em 0 0 1em;
+					}
+					
+					#header .content #content_container #form td
+					{
+						vertical-align:text-top;
+						width: 80%;
+					}
+						#header .content #content_container #form #registration_td
+						{
+							width: 40%
+						}
+							#header .content #content_container #form td #registration
+							{
+								padding: 1em 0 0 1em;
+								
+							}
+						
+						#header .content #content_container #form #sign_td
+						{
+							width: 60%
+						}
+						
+							#header .content #content_container #form td #sign
+							{
+								margin: 2em 0 0 2em;
+
+							}
+						
+								#header .content #content_container #form .sign_title
+								{
+									
+									font-size: 13pt;
+									font-weight: bold;
+									line-height: 1.75em;
+									color: black;
+								}
+						
+								#header .content #content_container #form .subtitle
+								{
+									font-size: 10pt;
+									font-weight: normal;
+									line-height: 0.50em;
+									color: #777;
+								}
+						
+								#header .content #content_container input[type="submit"]
+								{
+									font-size: 12pt;
+									font-weight: normal;
+									color: white;
+									height: 2em;
+								}
+					
+					
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		position: relative;
+		margin: 0;
+		text-align: center;
+		box-shadow: inset 0 0 0 0 #e6e6e6;
+		color: white;
+	}
+	
+		#footer #footer_container
+		{
+			background-color: black;
+			margin-left: 20%;
+			margin-right: 20%;
+			padding-top: 3em;
+			padding-bottom: 3em;
+			background-size: contain;
+			background-position: center;
+		}
+		
+		#footer .copyright
+		{
+		
+			font-size: 0.8em;
+			color: #aaa;
+		}
+		
+			#footer .copyright a
+			{
+				color: inherit;
+			}
+			
+		#footer ul .icons
+		{
+		}	
+		
+			#footer ul.icons li
+			{
+				display: inline-block;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			
+				#footer ul.icons a
+				{
+					text-decoration: none;
+				}
+				
+					#footer ul.icons a img
+					{
+						vertical-align: middle;
+					}
+	
+					
+				
