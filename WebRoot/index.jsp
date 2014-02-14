@@ -2,6 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
+<!-- This is the landing page-->
 <head>
 <title>SitWith - Main</title>
 <%
@@ -166,7 +167,7 @@ else logined = false;
 		
 	    <div class="login">
 	    <form action="Login" method = "post">
-	        <p><label>Email£º          </label><input type="text" name="Login_Email" id="Login_Email" class="text"></p>
+	        <p><label>Emailï¿½ï¿½          </label><input type="text" name="Login_Email" id="Login_Email" class="text"></p>
 	        <p><label>Password:</label><input type="password" name="Login_Password" id="Login_Password" class="text"></p>
 	        <p><input type="submit" name="" id="" value="submit" class="btn"/><input id="login_close_button" type="button" title="cancel" value="cancel" class="btn" onClick="close_login()" /></p>		
 	    </form>
